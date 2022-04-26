@@ -1,0 +1,21 @@
+<!-- extend base layout -->
+{% extends "index_base.html" %}
+
+
+{% block head_css %}
+    {{ super() }}
+    
+    <link href="{{url_for('static',filename='css/custom.css')}}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+{% endblock %}
+
+{% block head_js %}
+    {{ super() }}
+    <script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>
+{% endblock %}
+
+{% block content %}
+
+<h1>resources</h1>
+
+{% endblock %}

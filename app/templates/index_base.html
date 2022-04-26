@@ -1,6 +1,7 @@
 {% extends 'appbuilder/init.html' %}
 {% import 'appbuilder/baselib.html' as baselib %}
 
+
 {% block body %}
         {% include 'appbuilder/general/confirm.html' %}
         {% include 'appbuilder/general/alert.html' %}
@@ -8,11 +9,16 @@
     {% block navbar %}
         <header class="top" role="header">
         {{ baselib.navbar_block(appbuilder.menu, appbuilder.languages) }}
+        
         </header>
+
+        
+        
     {% endblock %}
 
     <div class="container-fluid">
       <div class="row">
+                
               {% block messages %}
                 {% include 'appbuilder/flash.html' %}
               {% endblock %}
@@ -20,6 +26,8 @@
               {% endblock %}
       </div>
     </div>
+
+
 
     {% block footer %}
         <footer>

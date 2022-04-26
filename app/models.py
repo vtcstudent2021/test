@@ -32,6 +32,13 @@ class Function(Model):
     def __repr__(self):
         return self.name
 
+class TestWork(Model):
+    id = Column(Integer, primary_key=True)
+    name = Column(String(50), unique=True, nullable=False)
+
+    def __repr__(self):
+        return self.name
+
 
 class Benefit(Model):
     id = Column(Integer, primary_key=True)
@@ -106,3 +113,9 @@ class NewsCategory(Model):
     __tablename__ = 'news_category'
     id = Column(Integer, primary_key=True)
     name = Column(String(50), nullable=False)
+    
+    
+    
+    
+    
+    
