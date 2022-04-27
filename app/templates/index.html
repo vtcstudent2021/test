@@ -9,103 +9,150 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 {% endblock %}
 
-{% block head_js %}
-    {{ super() }}
-    <script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>
-{% endblock %}
+
 
 {% block content %}
 
 
     
-    <div class="container">
-        <div class="page1">
-          
-            <img src="{{url_for('static',filename='img/logo.jpg')}}" width="400" height="400"alt="logo">
-            
-            <p>Join the millions learning to code with Codecademy for free</p>
-            
-            <form action="">
-                <label for="fname">Email</label><br>
-                <input type="text" id="fname" name="fname" ><br>
-                <label for="lname">Password</label><br>
-                <input type="text" id="lname" name="lname" ><br><br>
-                <input type="submit" value="SignUp">
-            </form> 
-            
-            <p>By signing up for Codecademy, you agree to Codecademy's Terms of Service & Privacy Policy.</p>
-            
+    <div class="main">
+        <div class="home">
+            <div class="image">
+                 <img src="{{url_for('static',filename='img/dd/logo.jpg')}}" alt="">
+            </div>
+            <div class="content">
+                <h1>Join the millions learning to code <br> Codecademy for free</h1>
+
+                <form action="#">
+                    <label for="fname">Email</label><br>
+                    <input type="text" id="fname" ><br><br>
+                    <label for="fname">Password</label><br>
+                    <input type="text" id="fname" ><br><br>
+                    
+                  </form> 
+                  <button>Sign up</button>
+                  <span>By signing up for Codecademy, you agree to Codecademy's Terms of Service & Privacy Policy.</span>
+                  
+            </div>
         </div>
-        <div class="page2">
-            <h2>What’s your goal?</h2>
-            <h3>Build a career</h3>
-            <p>Career Paths are our most complete offering, with everything you need to land the job.</p>
-            <img src="{{url_for('static',filename='img/p2.png')}}" width="400" height="400"alt="p2">
-            <a href="">Browse Catalog </a>
+
+        <div class="home">
+                <div class="content">
+                    <img src="{{url_for('static',filename='img/dd/p20.png')}}" alt="">
+                </div>
+                <div class="image">
+                    <img src="{{url_for('static',filename='img/dd/p2.png')}}" alt="">
+                </div>
         </div>
-        <div class="page3">
-            <img src="{{url_for('static',filename='img/p3.png')}}" width="400" height="400"alt="p3">
+        <div class="home">
+            <div class="image">
+                 <img src="{{url_for('static',filename='img/dd/p3.png')}}" alt="">
+            </div>
+            <div class="content">
+                <span>Beginners welcome</span>
+                <h1>Start coding in seconds</h1>
+                <span>Go ahead, give it a try. Our hands-on learning <br>
+                    environment means you'll be writing real code <br>
+                    from your very first lesson.</span>
+                <div>
+                    <a href="#">Continue lesson</a>
+                    <a href="#">More beginner courses</a>
+                </div>                      
+            </div>
         </div>
+
+        <div class="home">
+            <div class="content">
+                
+                <h1>Not sure where to start?</h1>
+                <span>This short quiz will sort you out. Answer a <br>
+                    few simple questions to get personal career<br>
+                     advice and course recommendations.</span>
+
+                <a href="#">Take the quiz</a>
+
+            </div>
+            <div class="imagesize">
+                <img src="{{url_for('static',filename='img/dd/p4.svg')}}" alt="">
+            </div>
+        </div>
+
+        <div class="people"> 
+            <h1>Stories from real people</h1>
+            <p>Watch and read stories from the Codecademy community.</p>
+            <div class="box-container">
+                <div class="box">
+                    <img src="{{url_for('static',filename='img/dd/GiacomoSorbi.jpeg')}}" alt="">
+                    <h2>Taking a different path: One Team Lead's story</h2>
+                    <p>Giacomo S., Team Lead, London</p>
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static',filename='img/dd/AlisonVoghel.jpg')}}" alt="">
+                    <h2>See how this Architect switched to UX Design</h2>
+                    <p>Alison V., Senior UX Designer @ Acquia, Columbus</p>
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static',filename='img/dd/ManuelSousa.jpg')}}" alt="">
+                    <h2>Lessons from a Chef turned Deputy CTO</h2>
+                    <p>Manuel S., Deputy CTO @ PaxFamilia, Brussels</p>
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static',filename='img/dd/Rosita.jpg')}}" alt="">
+                    <h2>How one Developer learned to code with her disability</h2>
+                    <p>Rosita R., Front-End Developer, Brummen</p>
+                </div>
+            </div>
+        </div>
+
         <div class="page4">
-            <span>Beginners welcome</span>
-            <h2>Start coding in seconds</h2>
-            <h2>Go ahead, give it a try. Our hands-on learning environment means you'll be writing real code from your very first lesson.</h2>
-            <a href="">Continue lesson</a>
-            <a href="">More beginner courses</a>
-            
+            <div class="contentcolor">
+                
+                <h1>Join in on something big</h1>
+                <h1>50M Learners</h1>
+                <h1>190+ Countries</h1>
+                <h1>3.7B Code submits</h1>
+            </div>
+
         </div>
-        <div class="page5">
-            <span>Not sure where to start?</span>
-            <span>This short quiz will sort you out. Answer a few simple questions to get personal career advice and course recommendations.</span>
-            <a href="">Take the quiz</a>
-            <img src="{{url_for('static',filename='img/p4.svg')}}" width="400" height="400"alt="p4">
+
+        <div class="home">
+            <div class="content">
+                
+                <h1>Level up your team's skills</h1>
+                <span>Give your team the knowledge, experience, and confidence <br>
+                    they need to tackle any problem.</span>
+
+                <a href="#">Explore business plans</a>
+
+            </div>
+            <div class="image">
+                <img src="{{url_for('static',filename='img/dd/p8.svg')}}" alt="">
+            </div>
         </div>
-        <div class="page6">
-            <h2>Stories from real people</h2>
-            <span>Watch and read stories from the Codecademy community.</span>
-            <a href="">Explore more stories →</a>
-            <br>
-            <img src="{{url_for('static',filename='img/GiacomoSorbi.jpeg')}}" width="400" height="400"alt="GiacomoSorbi"><br>
-            <span>Taking a different path: One Team Lead's story</span><br>
-            <span>Giacomo S., Team Lead, London</span>
-            <br>
-            <img src="{{url_for('static',filename='img/AlisonVoghel.jpg')}}" width="400" height="400"alt="AlisonVoghel"><br>
-            <span>See how this Architect switched to UX Design</span><br>
-            <span>Alison V., Senior UX Designer @ Acquia, Columbus</span>
-            <br>
-            <img src="{{url_for('static',filename='img/ManuelSousa.jpg')}}" width="400" height="400"alt="ManuelSousa"><br>
-            <span>Lessons from a Chef turned Deputy CTO</span><br>
-            <span>Manuel S., Deputy CTO @ PaxFamilia, Brussels</span>
-            <br>
-            <img src="{{url_for('static',filename='img/Rosita.jpg')}}" width="400" height="400"alt="Rosita"><br>
-            <span>How one Developer learned to code with her disability</span><br>
-            <span>Rosita R., Front-End Developer, Brummen</span>
-            
+
+        <div class="home">
+            <div class="image">
+                 <img src="{{url_for('static',filename='img/dd/p9.png')}}" alt="">
+            </div>
+            <div class="content">
+                <h1>Start for free</h1>
+                <p>If you’ve made it this far, you must be at least <br>
+                    a little curious. Sign up and take the first step <br>
+                    toward your goals.</p>
+                <button>Sign up</button>
+  
+            </div>
         </div>
-        <div class="page7">
-            <h2>Join in on<br> something big </h2>
-            <span>50M</span><br>
-            <span>Learners</span><br>
-            <span>190+</span><br>
-            <span>Countries</span><br>
-            <span>3.7B</span><br>
-            <span>Code submits</span>
+
+        <div class="home">
+                <div class="image">
+                    <img src="{{url_for('static',filename='img/dd/f1.png')}}" alt="">
+                </div>
+                <div class="image">
+                    <img src="{{url_for('static',filename='img/dd/f2.png')}}" alt="">
+                </div>
         </div>
-        <div class="page8">
-            <h2>Level up your team's skills</h2>
-            <p>Give your team the knowledge, experience, and confidence they need to tackle any problem.</p>
-            <a href="">Explore business plans</a>
-            <img src="{{url_for('static',filename='img/p8.svg')}}" width="400" height="400"alt="p8">
-        </div>
-        <div class="page9">
-            <img src="{{url_for('static',filename='img/p9.png')}}" width="600" height="400"alt="p9">
-            <span>Start for free</span>
-            <span>If you’ve made it this far, you must be at least a little curious. Sign up and take the first step toward your goals.</span>
-            <a href="">Sign up</a>
-        </div>
-        <div class="page10">
-            <h1>footer</h1>
-        </div>
+
     </div>
     
     

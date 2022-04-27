@@ -88,7 +88,7 @@ class NewsPageView(BaseView):
     def error_page(self):
         param1 = 'error'
         self.update_redirect()
-        return self.render_template('404.html', param1=param1)
+        return self.render_template('123.html', param1=param1)
         
 ### Catalog ###
     @expose('/catalog_page/')
@@ -123,7 +123,7 @@ class NewsPageView(BaseView):
 ### For Business ###
     @expose('/business_page/')
     def business_page(self):
-        param1 = 'business'
+        param1 = 'error'
         self.update_redirect()
         return self.render_template('business.html', param1=param1)
         
@@ -138,7 +138,7 @@ db.create_all()
 
 """ Page View """
 ### Catalog ###
-appbuilder.add_view(NewsPageView, 'Catalog', href="/newspageview/catalog_page/", category="Catalog")
+appbuilder.add_view(NewsPageView, 'Catalog', href="/newspageview/error_page/", category="Catalog")
 
 ### Resources ###
 appbuilder.add_link("Projects", href="/newspageview/error_page/", category="Resources")
@@ -160,7 +160,7 @@ appbuilder.add_link("Learner Stories", href="/newspageview/error_page/", categor
 appbuilder.add_link("For Individuals", href="/newspageview/error_page/", category="Pro Pricing")
 appbuilder.add_link("For Students", href="/newspageview/error_page/", category="Pro Pricing")
 ### For Business ###
-appbuilder.add_link("For Business", href="/newspageview/business_page/", category="For Business")
+appbuilder.add_link("For Business", href="/newspageview/error_page/", category="For Business")
 
 
 
