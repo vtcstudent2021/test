@@ -37,7 +37,7 @@ li.tight {
 
 img {
         height: auto;
-        width: 40rem;
+        width: 100rem;
         max-width: 100%;
         
  }
@@ -84,8 +84,16 @@ button {
     gap: 5rem;
 }
 
+/* catalog html*/
+.catalog {
+    position: relative;
+    width: 100%;
 
+    min-height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 
+}
 
 
 

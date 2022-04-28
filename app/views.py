@@ -93,14 +93,14 @@ class NewsPageView(BaseView):
 ### Catalog ###
     @expose('/catalog_page/')
     def catalog_page(self):
-        param1 = 'error'
+        param1 = 'catalog'
         self.update_redirect()
         return self.render_template('catalog.html', param1=param1)
 
 ### Resources ###
     @expose('/resources_page/')
     def resources_page(self):
-        param1 = 'error'
+        param1 = 'resources'
         self.update_redirect()
         return self.render_template('resources.html', param1=param1)
 
@@ -138,10 +138,10 @@ db.create_all()
 
 """ Page View """
 ### Catalog ###
-appbuilder.add_view(NewsPageView, 'Catalog', href="/newspageview/error_page/", category="Catalog")
+appbuilder.add_view(NewsPageView, 'Catalog', href="/newspageview/catalog_page/", category="Catalog")
 
 ### Resources ###
-appbuilder.add_link("Projects", href="/newspageview/error_page/", category="Resources")
+appbuilder.add_link("Projects", href="/newspageview/resources_page/", category="Resources")
 appbuilder.add_link("Challenges", href="/newspageview/error_page/", category="Resources")
 appbuilder.add_link("Docs", href="/newspageview/error_page/", category="Resources")
 appbuilder.add_link("Cheatsheets", href="/newspageview/error_page/", category="Resources")

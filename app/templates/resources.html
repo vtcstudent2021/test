@@ -16,6 +16,69 @@
 
 {% block content %}
 
-<h1>resources</h1>
+    <div class="catalog">
+        <div class="left_side">
+            <h1>Languages</h1>
+            <ul>
+                <ol><a href="">HTML & CSS</a></ol>
+                <ol><a href="">Python</a></ol>
+                <ol><a href="">JavaScript</a></ol>
+                <ol><a href="">Java</a></ol>
+                <ol><a href="">SQL</a></ol>
+                <ol><a href="">Bash/Shell</a></ol>
+                <ol><a href="">Ruby</a></ol>
+                <ol><a href="">C++</a></ol>
+                <ol><a href="">R</a></ol>
+                <ol><a href="">PHP</a></ol>
+                <ol><a href="">Go</a></ol>
+                <ol><a href="">Swift</a></ol>
+                <ol><a href="">Kotlin</a></ol>
+                <ol><a href="">C</a></ol>
+                
+            </ul>
+    
+            <h1>Subjects</h1>
+            <ul>
+                <ol><a href="">Web Development</a></ol>
+                <ol><a href="">Data Science</a></ol>
+                <ol><a href="">Computer Science</a></ol>
+                <ol><a href="">Developer Tools</a></ol>
+                <ol><a href="">Machine Learning</a></ol>
+                <ol><a href="">Code Foundations</a></ol>
+                <ol><a href="">Web Design</a></ol>
+                <ol><a href="">Game Development</a></ol>
+                <ol><a href="">Mobile Development</a></ol>
+                <ol><a href="">Data Visualization</a></ol>
+                <ol><a href="">Interview Prep</a></ol>
+                <ol><a href="">Cybersecurity</a></ol>
+                <ol><a href="">Math</a></ol>
+                <ol><a href="">Cloud Computing</a></ol>
+                
+            </ul>
+        </div>
+    
+        <div class="right_side">
+            <h1>Projects</h1>
+            <span>Projects let you apply what you're learning. Practice new skills, <br>
+                connect concepts, or put it all together to create something of <br>
+                your own.</span>
+            <h2>Staff picks</h2>    
+            <img src="{{url_for('static',filename='img/dd/projects1.png')}}" alt="">
+            <h2>Most popular</h2>    
+            <img src="{{url_for('static',filename='img/dd/projects2.png')}}" alt="">
+            <h1>Get inspired</h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="{{url_for('static',filename='img/dd/GI1.png')}}" alt="">
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static',filename='img/dd/GI2.png')}}" alt="">
+                </div>
+                <div class="box">
+                    <img src="{{url_for('static',filename='img/dd/GI3.png')}}" alt="">
+                </div>
+    
+        </div>
+    </div>
 
 {% endblock %}
